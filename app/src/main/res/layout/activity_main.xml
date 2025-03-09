@@ -10,13 +10,15 @@
 
     <TextView
         android:id="@+id/tvHeading"
-        android:layout_width="238dp"
-        android:layout_height="71dp"
+        android:layout_width="222dp"
+        android:layout_height="69dp"
         android:layout_marginTop="36dp"
+        android:layout_marginBottom="3dp"
         android:text="K and A's Guessing Game"
         android:textAlignment="center"
-        android:textColor="#FFF307"
+        android:textColor="#673AB7"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,21 +35,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="384dp"
-        android:layout_height="485dp"
+        android:layout_height="460dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="136dp"
         app:columnCount="5"
-        app:rowCount="6"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="110dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+        app:rowCount="6">
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -55,10 +63,10 @@
             android:id="@+id/editTextText2"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="4"
             app:layout_row="0" />
 
@@ -66,10 +74,10 @@
             android:id="@+id/editTextText3"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="0" />
 
@@ -77,10 +85,10 @@
             android:id="@+id/editTextText4"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -88,10 +96,10 @@
             android:id="@+id/editTextText5"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -99,60 +107,65 @@
             android:id="@+id/editTextText6"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="1" />
+
         <EditText
             android:id="@+id/editTextText7"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="1" />
+
         <EditText
             android:id="@+id/editTextText8"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="2"
             app:layout_row="1" />
+
         <EditText
             android:id="@+id/editTextText9"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="1" />
+
         <EditText
             android:id="@+id/editTextText10"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="4"
             app:layout_row="1" />
+
         <EditText
             android:id="@+id/editTextText11"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="2" />
 
@@ -160,190 +173,208 @@
             android:id="@+id/editTextText12"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="2" />
+
         <EditText
             android:id="@+id/editTextText13"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="2"
             app:layout_row="2" />
+
         <EditText
             android:id="@+id/editTextText14"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="2" />
+
         <EditText
             android:id="@+id/editTextText15"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="4"
             app:layout_row="2" />
+
         <EditText
             android:id="@+id/editTextText16"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="3" />
+
         <EditText
             android:id="@+id/editTextText17"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="3" />
+
         <EditText
             android:id="@+id/editTextText18"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="2"
             app:layout_row="3" />
+
         <EditText
             android:id="@+id/editTextText19"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="3" />
+
         <EditText
-        android:id="@+id/editTextText20"
-        android:layout_width="76dp"
-        android:layout_height="64dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+            android:id="@+id/editTextText20"
+            android:layout_width="76dp"
+            android:layout_height="64dp"
             android:layout_marginTop="12dp"
-        app:layout_column="4"
-        app:layout_row="3" />
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_column="4"
+            app:layout_row="3" />
+
         <EditText
             android:id="@+id/editTextText21"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="4" />
+
         <EditText
             android:id="@+id/editTextText22"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="4" />
+
         <EditText
             android:id="@+id/editTextText23"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="2"
             app:layout_row="4" />
+
         <EditText
             android:id="@+id/editTextText24"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="4" />
+
         <EditText
             android:id="@+id/editTextText25"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="4"
             app:layout_row="4" />
+
         <EditText
             android:id="@+id/editTextText26"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="0"
             app:layout_row="5" />
+
         <EditText
             android:id="@+id/editTextText27"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="1"
             app:layout_row="5" />
+
         <EditText
-        android:id="@+id/editTextText28"
-        android:layout_width="76dp"
-        android:layout_height="64dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+            android:id="@+id/editTextText28"
+            android:layout_width="76dp"
+            android:layout_height="64dp"
             android:layout_marginTop="12dp"
-        app:layout_column="2"
-        app:layout_row="5" />
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_column="2"
+            app:layout_row="5" />
+
         <EditText
             android:id="@+id/editTextText29"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="3"
             app:layout_row="5" />
+
         <EditText
             android:id="@+id/editTextText30"
             android:layout_width="76dp"
             android:layout_height="64dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
-            android:layout_marginTop="12dp"
             app:layout_column="4"
             app:layout_row="5" />
 
