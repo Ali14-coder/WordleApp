@@ -6,9 +6,9 @@ import retrofit2.http.POST
 
 interface ApiService {
 
-    @POST
-    fun getGuess(): Call<Guess>
+    @POST("GetActualWord")
+    fun getActualWord(): Call<Guess>
 
     @GET("CheckWord")
-    fun getGuessResults(): Call<Guess>
+    fun getGuessResults(guess: Array<String>): Call<Guess>
 }

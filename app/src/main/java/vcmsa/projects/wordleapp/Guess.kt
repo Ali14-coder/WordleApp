@@ -13,6 +13,7 @@ class Guess {
     }
 
     fun GetResults(result: Array<String>){
+
         this.result = result
     }
 
