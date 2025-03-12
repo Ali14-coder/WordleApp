@@ -52,7 +52,6 @@ class WhatsTheWordApi {
 
         val call: Call<Guess> = service.getGuessResults(guessWord)
 
-
         call.enqueue( object: Callback<Guess>{
              override fun onResponse(call: Call<Guess>, response: Response<Guess>)
             {

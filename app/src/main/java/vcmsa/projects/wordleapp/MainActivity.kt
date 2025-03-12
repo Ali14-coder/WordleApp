@@ -1,5 +1,6 @@
 package vcmsa.projects.wordleapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Switch
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var guessFive :Array<String>
     private lateinit var guessSix :Array<String>
     lateinit var btnSubmit: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,7 +80,6 @@ class MainActivity : AppCompatActivity() {
                         WhatsTheWordApi().getResults(this, guessTwo) { result ->
 
 
-
                         }
 
                     }
@@ -115,16 +116,4 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    }
 }
