@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
         guessOne = arrayOf(findViewById(R.id.r0c0),findViewById(R.id.r0c1),findViewById(R.id.r0c2),findViewById(R.id.r0c3),findViewById(R.id.r0c4))
 
@@ -93,7 +93,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
 
 
 
